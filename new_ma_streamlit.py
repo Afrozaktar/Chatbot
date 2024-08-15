@@ -1,7 +1,9 @@
 import streamlit as st
 from new_multiagent import get_answer
 
-
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 st.markdown(
     """
     <h1 style='text-align: center; font-family: "Amasis MT Pro Black", sans-serif; font-weight: bold; color: #FFFFFF;'>Course Recommendation System</h1>
