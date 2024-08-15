@@ -1,0 +1,22 @@
+Course Code,Course Title,Pre-requisite,Semester,Credits,Co-requisite
+EMT 1111,Logic and Problem Solving,CUNY proficiency in mathematics,first,1,None
+EMT 1120,Technical Graphics,None,first,1,None
+EMT 1130,Electromechanical Manufacturing Laboratory,None,first,1,None
+EMT 1150,Electrical Circuit (co: EMT 1150L),"EMT 1120, EMT 1130, MAT 1275CO, MAT 127,  higher",first,5,"EMT 1120, EMT 1130, MAT 1275CO, MAT 1275, higher"
+ENG 1101,English Composition I,"CUNY read, write proficiency",first,3,None
+MAT 1375,Precalculus,None,first,4,None
+EMT 1255,Electronics (co: EMT 1255L),"EMT 1250, MAT 1375, higher (WI*)",second,4,"EMT 1250, MAT 1375, higher (WI*)"
+PHYS 1433,General Physics I Algebra-based,None,second,4 or 5,None
+PHYS 1441,General Physics I Calculus based,None,second,4 or 5,None
+EMT 1220,Mechanism (co: EMT 1220L),"EMT 1120, EMT 1130, PHYS 1433, PHYS 1441, MAT1275,  MAT1275, higher",second,4,"PHYS 1433, PHYS 1441, MAT1275, MAT1275, higher"
+EMT 1250,Fundamentals of Digital Systems (co: EMT 1250L),"EMT 1111, EMT 1130, EMT 1150",second,4,None
+ENG 1121,English Composition II,ENG1101,third,3,None
+MAT 1475,Calculus I,MAT 1375,third,4,None
+EMT 2320,Advanced Mechanism (co: EMT 2320L),"EMT 1120, EMT 1220, EMT 1255",third,5,EMT 1255
+EMT 2370,Computer Hardware,EMT 1250,third,2,None
+EMT 2390L,Operating Systems Laboratory,EMT 2370,third,1,EMT 2370
+EMT 2480L,Electromechanical Systems Design Laboratory,"EMT 2455, EMT 2480L, MAT 1475, higher",fourth,1,"EMT 2455, EMT 2480L, MAT 1475 or higher"
+EMT 2461,Electromechanical Systems: Software Interface,"EMT 1111, EMT 2370",fourth,2,None
+PHYS 1434,General Physics II Algebra-based,None,fourth,4 or 5,None
+EMT 2455,Data Communications,"EMT 1250, EMT 2370",fourth,2,None
+PHYS 1442,General Physics II Calculus based,None,fourth,4 or 5,None
