@@ -1,0 +1,52 @@
+﻿Semester,Course Code,Course Title,Prerequisites,Prerequisites/Corequisites,Credits
+1st,EMT 1111,Logic and Problem Solving,CUNY proficiency in mathematics,,1
+1st,EMT 1120,Technical Graphics,,,1
+1st,EMT 1130,Electromechanical Manufacturing Laboratory,,,1
+1st,EMT 1150,Electrical Circuit (co: EMT 1150L),"EMT 1120, EMT 1130","EMT 1150L, MAT 1275CO or MAT 1275 or higher",5
+1st,EMT 1220,Mechanism (co: EMT 1220L),"EMT 1120, EMT 1130","MAT 1275 or higher, PHYS 1433 or PHYS 1441",4
+2nd,EMT 1250,Fundamentals of Digital Systems (co: EMT 1250L),"EMT 1111, EMT 1130, EMT 1150",,4
+2nd,EMT 1255,Electronics (co: EMT 1255L),,"EMT 1250, MAT 1375 or higher",4
+3rd,EMT 2320,Advanced Mechanism (co: EMT 2320L),"EMT 1120, EMT 1220","EMT 1255, EMT 2320L",5
+3rd,EMT 2370,Computer Hardware,EMT 1250,,2
+3rd,EMT 2390L,Operating Systems Laboratory,,EMT 2370,1
+4th,EMT 2455,Data Communications,"EMT 1250, EMT 2370",,2
+4th,EMT 2461,Electromechanical Systems: Software Interface,"EMT 1111, EMT 2370","EMT 2455, EMT 2480L, MAT 1475 or higher",2
+4th,EMT 2480L,Electromechanical Systems Design Laboratory,"EMT 2320, PHYS 1433 or PHYS 1441, ENG 1101",,1
+4th,EMT 2410,C/C++ Programing for Embedded Systems,,EMT 2370,3
+4th,CST 2403,Intro C++ Programming,,"EMT 1111, MAT 1275 or higher",3
+4th,CET 3910,Mechanics of Materials,"MAT 1475, PHYS 1433",,3
+1st,ENG 1101,English Composition I,"CUNY read, write proficiency",,3
+1st,MAT 1375,Precalculus,,,4
+2nd,PHYS 1433,General Physics I Algebra-based,,,4
+3rd,ENG 1121,English Composition II,ENG 1101,,3
+3rd,MAT 1475,Calculus I,MAT 1375,,4
+4th,PHYS 1434,General Physics II Algebra-based,,,4
+,MAT 1275CO,College Algebra and Trigonometry Corequisite,MAT 1190 or MAT 1190CO or CUNY proficiency in mathematics,,4
+,MAT 1275,College Algebra and Trigonometry,CUNY proficiency in mathematics,,4
+2nd,PHYS 1441,General Physics I Calculus based,,,5
+4th,PHYS 1442,General Physics II Calculus based,,,5
+3rd,GenEd Elective I,General Education Elective I,,,3
+4th,GenEd Elective II,General Education Elective II,,,3
+5th,CET 3510,Microcomputer Systems Technology,"EMT 1250, EMT 1255","EMT 2410 or CST 2403, MAT 1575",4
+5th,CET 3525,Electrical Networks,,MAT 1575 or higher,4
+5th,CET 3550,Analog and Digital Electronics,,"MAT 1575, CET 3525",4
+6th,CET 3615,Instrumentation and Data Acquisition,"MAT 1575 or higher, CET 3525, PHYS 1434 or PHYS 1442",,4
+6th,CET 3625,Applied Analysis Laboratory,,MAT 2680,1
+6th,CET 3640,Software for Computer Control,"EMT 2410 or CST 2403, CET 3510",,3
+7th,CET 4705,Component and Subsystem Design I,"CET 3625, MAT 2680, CET 3615",,2
+7th,CET 4711,Computer Controlled System Design,CET 3640,CET 4705,2
+7th,CET 4773,Inter-networking Technology,CET 3510,,4
+,CET 4762,Electromechanical Devices,"CET 3615, CET 3625",,4
+8th,CET 4805,Component and Subsystem Design II,CET 4705,,2
+8th,CET 4811,Capstone Design Project,"CET 3640, CET 4711","CET 4773, CET 4805, CET 4864",2
+8th,CET 4864,Principles of Feedback Control Systems,"CET 3625, MAT 2580",,4
+5th,COM 1330,Public Speaking or higher,"CUNY read, write proficiency",,3
+7th,MAT 2580,Introduction to Linear Algebra,,MAT1575,3
+5th,MAT 1575,Calculus II,MAT1475,,4
+6th,MAT 2680,Differential Equations,MAT1575,,3
+7th,Tech Elective I,Technical Elective I,,,4
+8th,Tech Elective II,Technical Elective II,,,3
+6th,GenEd Elective III,General Education Elective III,,,3
+7th,GenEd Elective IV,General Education Elective IV,,,3
+7th,ID Course,Interdisciplinary,,,3
+8th,Liberal Arts,Liberal Arts,,,3
