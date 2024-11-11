@@ -1,0 +1,56 @@
+api_keys:
+  OPENAI_API_KEY: "API KEY"
+
+tools:
+  csv_tool:
+    type: CSVSearchTool
+    file: "merged.csv"
+  pdf_tool:
+    type: PDFSearchTool
+    file: "ADVISE2.pdf"
+  web_tool:
+    type: WebsiteSearchTool
+    url: "https://www.citytech.cuny.edu/catalog/program.aspx?id=47"
+
+agents:
+  recommender:
+    role: "Recommends courses"
+    goal: "Provide accurate and exact recommendations for courses based on students' interests and qualifications."
+    backstory: "You are an experienced student advisor. Your task is to suggest the right courses based on the query and contexts provided."
+    tools: ["pdf_tool", "web_tool"]
+    max_iterations: 50
+    max_execution_time: 300
+    allow_delegation: false
+    verbose: true
+
+  validator:
+    role: "Validates answer given by recommender"
+    goal: "Review the answer and validate if the answer is correct or not."
+    backstory: "A skilled reviewer who checks the answer to make completely sure the student is getting the correct answer by looking at columns like semester, prerequisites, corequisites, etc."
+    tools: ["csv_tool"]
+    verbose: true
+
+tasks:
+  recommend:
+    description: |
+      Read the PDF file and find the courses that match the student query: {query}
+      Consider prerequisites and corequisites for each course when making recommendations.
+      Pre-requisite: Classes you must take prior to the specific class.
+      Co-requisite: Classes you can take along with the desired class if you have not taken them before.
+      For example, suppose someone took EMT1111, EMT1150, ENG1101 so far.
+      As they have not completed all classes needed for starting second-semester classes,
+      they cannot take any second-semester classes until they complete EMT1120, EMT1130, and some general education classes like ENG, MAT, PHY for which no prerequisites are needed or the student already took prerequisites.
+      Provide a user-friendly but straightforward response and avoid unnecessary information.
+    expected_output: "A list or description of courses matching the student query, including course name, prerequisites, and corequisites. Be accurate and concise."
+    agent: "recommender"
+
+  validate:
+    description: "Write the exact correct answer for the student and validate the answer given by recommender."
+    expected_output: "Complete correct answer."
+    agent: "validator"
+
+crew:
+  agents: ["recommender", "validator"]
+  tasks: ["recommend"]
+  inputs:
+    query:
